@@ -44,7 +44,7 @@ a:link { color:#666; }
 .hresume a:hover { background:url(images/link.png) right no-repeat; padding:0 17px 0 0; color:#666; }
 .hresume ul { border:1px solid #CCC; background:#FAFAFA; padding:25px 19px; position:relative; }
 .hresume ul li { padding:0 0 5px; margin:0 0 10px; border-bottom:1px dotted #CCC; }
-.hresume h2 { position:relative; z-index:1; top:12px; padding:210px 0 0 !important/*ie7,ff默认偏移锚点，js不对它们执行锚点偏移*/; padding:0/*ie6锚点偏移由js做,在没有支持脚本的时候锚点不偏移*/; margin:-210px 0 0 0!important ; margin:0 }
+.hresume h2 { position:relative; z-index:1; top:12px; padding:230px 0 0 !important/*ie7,ff默认偏移锚点，js不对它们执行锚点偏移*/; padding:0/*ie6锚点偏移由js做,在没有支持脚本的时候锚点不偏移*/; margin:-210px 0 0 0!important ; margin:0 }
 	/* 区块层叠重排序 */
 	#summary { z-index:20; }
 	.hreview { z-index:19; }
