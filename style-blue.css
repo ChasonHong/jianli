@@ -1,0 +1,92 @@
+@charset "utf-8";
+/*------------------------------------------------------------------
+Resume General Style Sheet
+
+Verison: 1.0
+Date:23/09/2009
+autor:Joe Chou
+Email:admin@xiebiji.com
+Website:http://xiebiji.com
+--------------------------------------------------------------------*/
+/* 样式初始化 */
+ul, ol, li, img, abbr, body, p, h1, h2, h3 { margin:0; padding:0; list-style:none; }
+body { font-family: '微软雅黑', '黑体'; font-size:12px; background-image:url(about:blank); background-attachment:fixed; }
+img, abbr { border:none; }
+/* 共用标题 */
+h1 { font-size:30px; }
+h2 { font-size:20px; color:#09C; }
+h3 { font-size:14px; }
+/* 共用连接 */
+a { outline:none; text-decoration:none; color:#000; }
+a:hover { text-decoration:underline; }
+a:link { color:#666; }
+/* 公共头部 */
+.header .summary,.hresume, .header h1{ width:800px; margin:0 auto; }
+.header { width:100%; background:#036; border-bottom:#069 4px solid; position:fixed !important;/*ie7 ff*/ position:absolute; z-index:21; left:0; top:0; }
+.header h1, .header h1 a { color:#FFF; }
+.header h1 { line-height:54px; height:54px;  }
+.header .summary { position:relative; background:url(images/headerBg-blue.png) no-repeat right; }
+.header .summary .base, .header .summary .topMap { border-top:1px solid #44D0FF; border-left:1px solid #44D0FF; border-right:1px solid #44D0FF; background:#09C url(images/hcard-blue.gif) no-repeat center; padding:10px 19px; width:515px; }
+.header .summary .topMap { border-top:2px solid #000; border-left:2px solid #000; border-right:2px solid #000; background:#FFF; width:auto; margin:0 0 0 20px; padding:10px 30px 0; position:absolute; bottom:-4px; right:0; }
+.topMap li { float:left; display:inline; }
+.topMap li a { width:14px; display:block; padding:5px 5px 10px; }
+.topMap li a:hover, .topMap li a.mapSelected { color:#FFF; background:#0098d0 url(images/arrow-blue.png) no-repeat bottom; }
+	/* 基本概况 */
+	.base { position:relative; }
+	.base img { height:115px; padding:1px; border:1px solid #005B7A; background:#FFF; }
+	.base .fn, .base .n, .base .adr, .base .tel, .base .url, .base .email { color:#FFF; }
+	.base .url, .base .email { text-decoration:underline; }
+	.base .url:hover, .base .email:hover { text-decoration:none; color:#0FF; }
+	.base li.photo { float:right; }
+	.base li { line-height:20px; }
+/* 主体公共部分 */
+.hresume { padding:210px 0 0;}
+.hresume a:hover { background:url(images/link.png) right no-repeat; padding:0 17px 0 0; color:#666; }
+.hresume ul { border:1px solid #CCC; background:#FAFAFA; padding:25px 19px; position:relative; }
+.hresume ul li { padding:0 0 5px; margin:0 0 10px; border-bottom:1px dotted #CCC; }
+.hresume h2 { position:relative; z-index:1; top:12px; padding:210px 0 0 !important/*ie7,ff默认偏移锚点，js不对它们执行锚点偏移*/; padding:0/*ie6锚点偏移由js做,在没有支持脚本的时候锚点不偏移*/; margin:-210px 0 0 0!important ; margin:0 }
+	/* 区块层叠重排序 */
+	#summary { z-index:20; }
+	.hreview { z-index:19; }
+	#expertation { z-index:18; }
+	.expertation { z-index:17; }
+	#education { z-index:16; }
+	.education { z-index:15; }
+	#history { z-index:14; }
+	.history { z-index:13; }
+	#exprience { z-index:12; }
+	.exprience { z-index:11; }
+	#skills { z-index:10; }
+	.skills { z-index:9; }
+.hresume h3 { margin-bottom:5px; }
+.hresume .date_duration { margin-bottom:3px; padding:0 0 0 18px; background:url(images/time.png) no-repeat; color:#666; }
+.hresume .description { }
+	/* 个人概况 */
+	.hreview .title { display:none; }
+	/* 求职意向 */
+	.expertation h3 { display:inline; }
+	/* 技能掌握 */
+	.skills a { font-weight:bold; }
+	.skills a:hover { background:none; padding:0; color:#036; text-decoration:none; }
+	.skills ol li { display:inline; border:none; margin:0 4px; }
+/* 版本 */
+.version{ margin:60px 0 450px;text-align:center;}
+.version h2{line-height:100px;font-size:45px;font-weight:bold;color:#CCC;}
+.version li{ display:inline;}
+.version a{ color:#000;padding:0 5px 0 18px;text-decoration:underline; background:url(images/link.png) no-repeat}
+.version a:hover{ color:#09F;text-decoration:none}
+.version a#changeColor:hover{color:#D0007D;}
+.version a.focus{background:#09F; color:#FFF; padding:0 5px;text-decoration:none}
+/* 公共页脚 */
+.footer{width:100%;background:#036; border-top:#069 4px solid;position:fixed !important;/*ie7 ff*/ position:absolute; bottom:0 !important; bottom:auto;/*ie6无js状态下底端默认*/ z-index:50}
+.footer #copyright{width:800px; margin:0px auto; color:#FFF;padding:3px 0 0}
+.footer #copyright p{float:left}
+.footer #copyright p a{color:#FFF}
+.footer #copyright img{ position:absolute}
+.footer .valid{float:right;background:#FFE5CB; padding:3px}
+.footer .valid li{ display:inline}
+.footer .valid li a{color:#000; text-decoration:none; float:left; padding:0px 3px 0px 20px; height:15px; margin:0 4px}
+.footer .valid li a:hover{color:#036; text-decoration:none}
+.footer .valid li.micro a{background:url(images/icon.png) no-repeat}
+.footer .valid li.html a,.footer .valid li.css a{background:url(images/icon.png) 0 -15px no-repeat}
+.footer #toTop{background:url(images/toTop-blue.png) no-repeat 0 1px;float:right;height:15px;position:absolute;width:15px;}
