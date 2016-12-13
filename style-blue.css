@@ -40,7 +40,7 @@ a:link { color:#666; }
 	.base li.photo { float:right; }
 	.base li { line-height:20px; }
 /* 主体公共部分 */
-.hresume { padding:210px 0 0;}
+.hresume { padding:230px 0 0;}
 .hresume a:hover { background:url(images/link.png) right no-repeat; padding:0 17px 0 0; color:#666; }
 .hresume ul { border:1px solid #CCC; background:#FAFAFA; padding:25px 19px; position:relative; }
 .hresume ul li { padding:0 0 5px; margin:0 0 10px; border-bottom:1px dotted #CCC; }
